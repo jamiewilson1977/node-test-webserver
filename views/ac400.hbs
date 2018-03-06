@@ -1,0 +1,12 @@
+"network/lan/dhcp/ntp/gmt_offset/enabled="{{phone_enableTimeZoneFromDHCP}}
+"network/lan/fixed_ip/gateway="{{phone_ip_gateway}}
+network/lan/fixed_ip/ip_address={{phone_ip_address}}
+network/lan/fixed_ip/netmask={{phone_ip_netMask}}
+network/lan/fixed_ip/primary_dns={{phone_ip_dns_primary}}
+network/lan/fixed_ip/secondary_dns={{phone_ip_dns_secondary}}
+network/lan_type=DHCP
+provisioning/method=STATIC
+"provisioning/firmware/url={{phone_provisionUri}}
+provisioning/configuration/url={{phone_provisionUri}}
+provisioning/url_option_value={{phone_dhcpInformOptionCode}}
+system/daylight_saving/activate=ENABLE
